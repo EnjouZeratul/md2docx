@@ -20,7 +20,7 @@ pip install md2docx
 或从源码安装：
 
 ```bash
-git clone https://github.com/yourusername/md2docx.git
+git clone https://github.com/EnjouZeratul/md2docx.git
 cd md2docx
 pip install -e .
 ```
