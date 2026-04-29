@@ -1,0 +1,78 @@
+# md2docx/templates/example.yaml
+# Example custom configuration template
+# Copy and modify for your needs
+
+document:
+  title_zh: "论文题目"
+  title_en: "Thesis Title"
+  author: "作者姓名"
+  date: "2026年4月"
+
+page:
+  size: A4
+  margins:
+    left: 3.0cm
+    right: 2.5cm
+    top: 2.54cm
+    bottom: 2.54cm
+
+fonts:
+  default: 宋体
+  heading: 黑体
+  code: Consolas
+  formula: Times New Roman
+
+headings:
+  chapter:
+    size: 18
+    bold: true
+    align: center
+  section:
+    size: 14
+    bold: true
+    align: left
+  subsection:
+    size: 12
+    bold: true
+    indent: true
+
+body:
+  size: 12
+  line_spacing: 1.5
+  first_line_indent: 0.74cm
+
+figures:
+  max_width: 14cm
+  caption_size: 9
+  caption_font: 宋体
+
+toc:
+  enabled: true
+  levels: "1-3"
+
+cover:
+  enabled: false
+  template: ""
+
+abstract:
+  auto_extract: true
+  title_size: 18
+  title_font: 黑体
+  body_size: 12
+  body_font: 宋体
+
+header_footer:
+  header_text: ""
+  header_font_size: 10.5
+  page_number_start: 1
+
+formula:
+  chinese_replacements:
+    "滑坡": "LS"
+    "泥石流": "DF"
+
+table:
+  border_top_weight: 1.5
+  border_header_weight: 1.0
+  border_bottom_weight: 1.5
+  border_color: "000000"
