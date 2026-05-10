@@ -117,7 +117,7 @@ touch tests/test_renderer/__init__.py
 
 - [ ] **Step 6: Install dependencies and verify**
 
-Run: `cd D:/TA/md2docx && pip install -e .`
+Run: `cd md2docx && pip install -e .`
 Expected: Successfully installed md2docx
 
 - [ ] **Step 7: Commit**
@@ -224,7 +224,7 @@ class TestUnitParsing:
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_config.py -v`
+Run: `cd md2docx && pytest tests/test_config.py -v`
 Expected: FAIL with "ModuleNotFoundError" or similar
 
 - [ ] **Step 3: Create templates/default.yaml**
@@ -542,7 +542,7 @@ def _validate_config(config: Config) -> None:
 
 - [ ] **Step 5: Run test to verify it passes**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_config.py -v`
+Run: `cd md2docx && pytest tests/test_config.py -v`
 Expected: PASS
 
 - [ ] **Step 6: Commit**
@@ -638,7 +638,7 @@ class TestElementTypes:
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_parser.py -v`
+Run: `cd md2docx && pytest tests/test_parser.py -v`
 Expected: FAIL with "ModuleNotFoundError"
 
 - [ ] **Step 3: Implement element types in parser.py**
@@ -731,7 +731,7 @@ Element = (
 
 - [ ] **Step 4: Run test to verify it passes**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_parser.py -v`
+Run: `cd md2docx && pytest tests/test_parser.py -v`
 Expected: PASS
 
 - [ ] **Step 5: Commit**
@@ -921,7 +921,7 @@ $$
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_parser.py::TestMarkdownParser -v`
+Run: `cd md2docx && pytest tests/test_parser.py::TestMarkdownParser -v`
 Expected: FAIL with "ImportError" or "AttributeError"
 
 - [ ] **Step 3: Implement MarkdownParser class**
@@ -1236,7 +1236,7 @@ def parse_markdown(text: str, base_path: str = ".") -> List[Element]:
 
 - [ ] **Step 4: Run tests**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_parser.py -v`
+Run: `cd md2docx && pytest tests/test_parser.py -v`
 Expected: Most tests PASS, some may need adjustment
 
 - [ ] **Step 5: Fix failing tests if any**
@@ -1319,7 +1319,7 @@ class TestFormatter:
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_formatter.py -v`
+Run: `cd md2docx && pytest tests/test_formatter.py -v`
 Expected: FAIL with "ModuleNotFoundError"
 
 - [ ] **Step 3: Implement formatter.py**
@@ -1470,7 +1470,7 @@ def create_hyperlink(paragraph, text: str, url: str):
 
 - [ ] **Step 4: Run tests**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_formatter.py -v`
+Run: `cd md2docx && pytest tests/test_formatter.py -v`
 Expected: PASS
 
 - [ ] **Step 5: Commit**
@@ -1576,7 +1576,7 @@ class TestMermaidRenderer:
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_renderer/test_mermaid.py -v`
+Run: `cd md2docx && pytest tests/test_renderer/test_mermaid.py -v`
 Expected: FAIL with "ModuleNotFoundError"
 
 - [ ] **Step 3: Implement mermaid renderer**
@@ -1731,7 +1731,7 @@ class MermaidRenderer:
 
 - [ ] **Step 4: Run tests**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_renderer/test_mermaid.py -v`
+Run: `cd md2docx && pytest tests/test_renderer/test_mermaid.py -v`
 Expected: PASS
 
 - [ ] **Step 5: Commit**
@@ -1836,7 +1836,7 @@ class TestFormulaRenderer:
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_renderer/test_formula.py -v`
+Run: `cd md2docx && pytest tests/test_renderer/test_formula.py -v`
 Expected: FAIL with "ModuleNotFoundError"
 
 - [ ] **Step 3: Implement formula renderer**
@@ -2014,7 +2014,7 @@ class FormulaRenderer:
 
 - [ ] **Step 4: Run tests**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_renderer/test_formula.py -v`
+Run: `cd md2docx && pytest tests/test_renderer/test_formula.py -v`
 Expected: Some tests pass, mock may need adjustment
 
 - [ ] **Step 5: Fix and commit**
@@ -2120,7 +2120,7 @@ class TestTableRenderer:
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_renderer/test_table.py -v`
+Run: `cd md2docx && pytest tests/test_renderer/test_table.py -v`
 Expected: FAIL with "ModuleNotFoundError"
 
 - [ ] **Step 3: Implement table renderer**
@@ -2263,7 +2263,7 @@ class TableRenderer:
 
 - [ ] **Step 4: Run tests**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_renderer/test_table.py -v`
+Run: `cd md2docx && pytest tests/test_renderer/test_table.py -v`
 Expected: Most tests pass
 
 - [ ] **Step 5: Commit**
@@ -2357,7 +2357,7 @@ $$
 
 - [ ] **Step 2: Run test to verify it fails**
 
-Run: `cd D:/TA/md2docx && pytest tests/test_integration.py -v`
+Run: `cd md2docx && pytest tests/test_integration.py -v`
 Expected: FAIL with "ModuleNotFoundError"
 
 - [ ] **Step 3: Implement DocxBuilder**
@@ -2679,7 +2679,7 @@ class DocxBuilder:
 
 - [ ] **Step 4: Run tests**
 
-Run: `cd D:/TA/md2docx && pytest tests/ -v`
+Run: `cd md2docx && pytest tests/ -v`
 Expected: Most tests pass
 
 - [ ] **Step 5: Commit**
@@ -2711,7 +2711,7 @@ git commit -m "feat: add DocxBuilder for assembling documents"
 
 - [ ] **Step 2: Run CLI test**
 
-Run: `cd D:/TA/md2docx && python -m md2docx.cli --help`
+Run: `cd md2docx && python -m md2docx.cli --help`
 Expected: Show help message
 
 - [ ] **Step 3: Implement CLI**
@@ -2922,7 +2922,7 @@ if __name__ == '__main__':
 
 - [ ] **Step 4: Test CLI**
 
-Run: `cd D:/TA/md2docx && python -m md2docx.cli --help`
+Run: `cd md2docx && python -m md2docx.cli --help`
 Expected: Show help
 
 - [ ] **Step 5: Commit**
@@ -3101,7 +3101,7 @@ class TestIntegration:
 
 - [ ] **Step 4: Run all tests**
 
-Run: `cd D:/TA/md2docx && pytest tests/ -v`
+Run: `cd md2docx && pytest tests/ -v`
 Expected: All tests pass
 
 - [ ] **Step 5: Commit**
@@ -3361,7 +3361,7 @@ table:
 
 - [ ] **Step 3: Verify all works**
 
-Run: `cd D:/TA/md2docx && pytest tests/ -v && python -m md2docx.cli --help`
+Run: `cd md2docx && pytest tests/ -v && python -m md2docx.cli --help`
 Expected: All pass, help shown
 
 - [ ] **Step 4: Final commit**
